@@ -8,8 +8,8 @@
     tools:context="drbond.android_digital_clock.MainActivity">
 
     <GridLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="#3E3E3E"
         android:columnCount="2"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -39,12 +39,11 @@
             android:layout_columnSpan="2"
             android:text="@string/set_alarm"
             android:gravity="center_horizontal"
-            android:textSize="40dp"
-            android:textColor="@android:color/background_light"
-            android:numbersInnerTextColor=""
-            />
+            android:textSize="20dp"
+            android:textColor="@android:color/background_light"/>
 
         <TimePicker
+            android:id="@+id/timePick"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_column="0"
@@ -54,6 +53,13 @@
             android:textColor="@android:color/background_light"
             android:textSize="40dp"
             android:timePickerMode="spinner" />
+
+        <ToggleButton
+            android:id="@+id/toggleAlarm"
+            android:layout_column="1"
+            android:layout_columnSpan="1"
+            android:layout_gravity="center_horizontal"
+            />
 
     </GridLayout>
 
