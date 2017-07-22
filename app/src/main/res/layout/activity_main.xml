@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="drbond.android_digital_clock.MainActivity">
+    tools:context="drbond.android_digital_clock.AlarmActivity">
 
     <GridLayout
         android:layout_width="0dp"
@@ -60,6 +60,7 @@
             android:layout_column="1"
             android:layout_columnSpan="1"
             android:layout_gravity="center_horizontal"
+            android:onClick="onToggleClicked"
             />
 
     </GridLayout>

@@ -1,6 +1,5 @@
 package drbond.android_digital_clock;
 
-
 import android.app.Activity;
 import android.content.ComponentName;
 import android.content.Context;
@@ -15,7 +14,7 @@ public class AlarmReceiver extends WakefulBroadcastReceiver {
     @Override
     public void onReceive(final Context context, Intent intent) {
         //this will update the UI with message
-        AlarmActivity inst = AlarmActivity.instance();
+        MainActivity inst = MainActivity.instance();
         inst.setAlarmText("Alarm! Wake up! Wake up!");
 
         //this will sound the alarm tone
