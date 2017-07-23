@@ -18,7 +18,6 @@ public class AlarmReceiver extends WakefulBroadcastReceiver {
         inst.setAlarmText("ALARM IS GOING OFF");
 
 
-
         Uri alarmUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_ALARM);
         if (alarmUri == null) {
             alarmUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);

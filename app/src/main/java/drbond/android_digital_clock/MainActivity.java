@@ -12,8 +12,8 @@ import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.ToggleButton;
 import android.view.Window;
-
 import java.util.Calendar;
+
 
 public class MainActivity extends Activity {
 
@@ -36,7 +36,7 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
-        // hide the title bar
+        // Hide the title bar
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
