@@ -8,6 +8,8 @@ import android.content.Intent;
 import android.support.v4.app.NotificationCompat;
 import android.util.Log;
 
+
+// Java Class To Manage the Notification Service
 public class AlarmService extends IntentService {
     private NotificationManager alarmNotificationManager;
 
@@ -17,7 +19,7 @@ public class AlarmService extends IntentService {
 
     @Override
     public void onHandleIntent(Intent intent) {
-        sendNotification("Wake Up! Wake Up!");
+        sendNotification("WAKE UP NOW");
     }
 
     private void sendNotification(String msg) {

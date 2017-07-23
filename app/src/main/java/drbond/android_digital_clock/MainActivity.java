@@ -1,5 +1,6 @@
 package drbond.android_digital_clock;
 
+
 import android.app.Activity;
 import android.app.AlarmManager;
 import android.app.PendingIntent;
@@ -39,6 +40,7 @@ public class MainActivity extends Activity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        // Add the Clock Components
         alarmTimePicker = (TimePicker) findViewById(R.id.timePick);
         alarmTextView = (TextView) findViewById(R.id.alarmText);
         ToggleButton toggleAlarm = (ToggleButton) findViewById(R.id.toggleAlarm);
